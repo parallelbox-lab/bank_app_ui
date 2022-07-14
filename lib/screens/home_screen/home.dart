@@ -8,7 +8,15 @@ class Home extends StatelessWidget {
     return Scaffold(
       body:SafeArea(
         child: ListView(children: [
-          
+          Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: Row(
+              children: [
+                
+                
+              ],
+            ),
+          )
         ],),
       )
     );
