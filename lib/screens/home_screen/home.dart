@@ -28,21 +28,30 @@ class Home extends StatelessWidget {
           const SizedBox(height:25),
           _buildAction(),
           const SizedBox(height: 25,),
-           Row(
+        Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 15),
+        child: Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
        const Text('Transactions',
-            style:
-                TextStyle(fontSize: 15, fontWeight: FontWeight.w700)),
+              style:
+                  TextStyle(fontWeight: FontWeight.w700)),
         GestureDetector(
           onTap: (){},
-          child:const Text('See all',
-          style:
-                TextStyle(fontSize: 15, fontWeight: FontWeight.w700)
-            ),
+          child:Row(
+            children:const [
+               Text('View all',
+              style:
+                      TextStyle(fontWeight: FontWeight.w700)
+                  ),
+            SizedBox(width:5),
+            Icon(Icons.arrow_forward)
+            ],
+          ),
         ),
       ],
-    )
+    ),
+           )
         ],),
       )
     );
