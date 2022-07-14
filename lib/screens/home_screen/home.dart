@@ -22,12 +22,11 @@ class Home extends StatelessWidget {
               children: [
              Container(
               decoration:const BoxDecoration(
+                color: Colors.red,
                 borderRadius: BorderRadius.all(Radius.circular(8))
               ),
               padding:const EdgeInsets.all(0),
-              margin:const EdgeInsets.all(8.0),
-              color: Colors.red,
-              
+              margin:const EdgeInsets.all(8.0),              
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children:  [
@@ -37,9 +36,11 @@ class Home extends StatelessWidget {
                Container(
               padding:const EdgeInsets.all(0),
               margin:const EdgeInsets.all(8.0),
-              
-              color: Colors.red,
-              child:Column(
+              decoration:const BoxDecoration(
+                color: Colors.red,
+                borderRadius: BorderRadius.all(Radius.circular(8))
+              ),
+                child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 const Icon(Icons.wallet_giftcard),
@@ -49,9 +50,9 @@ class Home extends StatelessWidget {
               padding:const EdgeInsets.all(0),
               margin:const EdgeInsets.all(8.0),
               decoration:const BoxDecoration(
+                color: Colors.red,
                 borderRadius: BorderRadius.all(Radius.circular(8))
               ),
-              color: Colors.red,
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -62,9 +63,9 @@ class Home extends StatelessWidget {
               padding:const EdgeInsets.all(0),
               margin:const EdgeInsets.all(8.0),
               decoration:const BoxDecoration(
+                color: Colors.red,
                 borderRadius: BorderRadius.all(Radius.circular(8))
               ),
-              color: Colors.red,
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
