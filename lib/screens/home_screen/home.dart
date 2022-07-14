@@ -1,3 +1,4 @@
+import 'package:bank_app_ui/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 
 class Home extends StatelessWidget {
@@ -22,15 +23,15 @@ class Home extends StatelessWidget {
                 Row(children: [
                   Image.asset("assets/nigeria_logo.jpg",width:25),
                   const SizedBox(width:10),
-                  const Text("Wallet Balance"),
+                  const CustomText(text: "Wallet Balance",color: Colors.white,),
                  const Spacer(),
-                   TextButton(onPressed:(){},
+                  TextButton(onPressed:(){},
                   child:const Text('Refresh Balance'),)
                 ],),
                const SizedBox(height:25),
                Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                  children: [
-                  const Text('N52,000'),
+                  const CustomText(text: "N52,0000",color: Colors.white,),
                    IconButton(onPressed: (){}, icon:const Icon(Icons.remove_red_eye))
                  ],
                )
