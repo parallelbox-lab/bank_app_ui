@@ -10,6 +10,10 @@ class Home extends StatelessWidget {
         child: ListView(children: [
           _buildAppBar(),
           Container(
+            decoration:const BoxDecoration(
+              color:Colors.purple,
+              borderRadius: BorderRadius.all(Radius.circular(20))
+            ),
             child:Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
