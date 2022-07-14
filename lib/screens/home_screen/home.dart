@@ -26,10 +26,16 @@ class Home extends StatelessWidget {
                   const CustomText(text: "Wallet Balance",color: Colors.white,),
                  const Spacer(),
                   TextButton(onPressed:(){},
-                  child:const Text('Refresh Balance'),
+                  child:Row(
+                    children: const [
+                    Icon(Icons.refresh),
+                    SizedBox(width:5),
+                    CustomText(text: 'Refresh Balance',color: Colors.white,),
+                    ],
+                  ),
                   style: TextButton.styleFrom(
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0)),
+                  borderRadius: BorderRadius.circular(4.0)),
               primary: Colors.white,
               backgroundColor: Colors.purpleAccent,
             ),)
