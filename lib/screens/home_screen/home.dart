@@ -10,7 +10,7 @@ class Home extends StatelessWidget {
         child: ListView(children: [
           _buildAppBar(),
           Container(
-            padding: const EdgeInsets.symmetric(vertical:20.0,horizontal: 15),
+            padding: const EdgeInsets.symmetric(vertical:9.0,horizontal: 15),
             margin:const EdgeInsets.symmetric(horizontal: 15) ,
             decoration:const BoxDecoration(
               color:Colors.purple,
@@ -23,6 +23,7 @@ class Home extends StatelessWidget {
                   Image.asset("assets/nigeria_logo.jpg",width:25),
                   const SizedBox(width:5),
                   const Text("Wallet Balance"),
+                 const Spacer(),
                   Expanded(child: TextButton(onPressed:(){},
                   child:const Text('Refresh Balance'),))
                 ],)
