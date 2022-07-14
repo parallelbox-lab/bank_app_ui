@@ -22,7 +22,7 @@ class Home extends StatelessWidget {
               children: [
              Container(
               decoration:const BoxDecoration(
-                color: Colors.red,
+                color: Color(0x1A90ee90),
                 borderRadius: BorderRadius.all(Radius.circular(8))
               ),
               padding:const EdgeInsets.all(0),
@@ -31,7 +31,7 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children:  [
                 const Icon(Icons.wallet_giftcard),
-                CustomText(text: "Fund Wallet",)
+                CustomText(text: "Fund Wallet",color: Color(0xff90ee90),)
                ],)),
                Container(
               padding:const EdgeInsets.all(0),
@@ -43,7 +43,7 @@ class Home extends StatelessWidget {
                 child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                const Icon(Icons.wallet_giftcard),
+                const Icon(Icons.card_membership_outlined),
                 CustomText(text:"Send Funds")
                ],)),
                Container(
