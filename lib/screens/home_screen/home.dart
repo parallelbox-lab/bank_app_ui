@@ -59,6 +59,7 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 const Icon(Icons.wallet_giftcard),
+                const SizedBox(height: 7,),
                 CustomText(text: "Cash Pin")
                ],)),
               Container(
@@ -72,6 +73,7 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 const Icon(Icons.wallet_giftcard),
+                const SizedBox(height: 7,),
                 CustomText(text: "Airtime")
                ],)),
                Container(
@@ -85,6 +87,7 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 const Icon(Icons.wallet_giftcard),
+                const SizedBox(height: 7,),
                 CustomText(text: "Pay Bills")
                ],)),
              Container(
@@ -98,6 +101,7 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 const Icon(Icons.wallet_giftcard),
+                const SizedBox(height: 7,),
                 CustomText(text: "View All")
                ],))
               ],
