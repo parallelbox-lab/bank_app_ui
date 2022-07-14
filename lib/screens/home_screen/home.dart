@@ -10,15 +10,16 @@ class Home extends StatelessWidget {
         child: ListView(children: [
           _buildAppBar(),
           Container(
+            padding: const EdgeInsets.symmetric(vertical:20.0,horizontal: 15),
             decoration:const BoxDecoration(
               color:Colors.purple,
-              borderRadius: BorderRadius.all(Radius.circular(20))
+              borderRadius: BorderRadius.all(Radius.circular(8))
             ),
             child:Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(children: [
-                  Image.asset("assets/nigeria_logo.png",width:25),
+                  Image.asset("assets/nigeria_logo.jpg",width:25),
                   const SizedBox(width:5),
                 ],)
             ],)
