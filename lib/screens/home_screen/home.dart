@@ -44,7 +44,7 @@ class Home extends StatelessWidget {
                const SizedBox(height:25),
                Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                  children: [
-                  const CustomText(text: "N52,0000",color: Colors.white,),
+                  const CustomText(text: "N52,0000",color: Colors.white,weight: FontWeight.bold,),
                    IconButton(onPressed: (){}, icon:const Icon(Icons.remove_red_eye,color:Colors.white))
                  ],
                )
