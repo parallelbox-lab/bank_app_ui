@@ -21,9 +21,13 @@ class Home extends StatelessWidget {
               crossAxisSpacing: 0.0,
               children: [
              Container(
+              decoration:const BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(8))
+              ),
               padding:const EdgeInsets.all(0),
               margin:const EdgeInsets.all(8.0),
               color: Colors.red,
+              
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children:  [
@@ -33,6 +37,7 @@ class Home extends StatelessWidget {
                Container(
               padding:const EdgeInsets.all(0),
               margin:const EdgeInsets.all(8.0),
+              
               color: Colors.red,
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -43,6 +48,9 @@ class Home extends StatelessWidget {
                Container(
               padding:const EdgeInsets.all(0),
               margin:const EdgeInsets.all(8.0),
+              decoration:const BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(8))
+              ),
               color: Colors.red,
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -53,6 +61,9 @@ class Home extends StatelessWidget {
               Container(
               padding:const EdgeInsets.all(0),
               margin:const EdgeInsets.all(8.0),
+              decoration:const BoxDecoration(
+                borderRadius: BorderRadius.all(Radius.circular(8))
+              ),
               color: Colors.red,
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -63,7 +74,10 @@ class Home extends StatelessWidget {
                Container(
               padding:const EdgeInsets.all(0),
               margin:const EdgeInsets.all(8.0),
-              color: Colors.red,
+              decoration:const BoxDecoration(
+                color: Colors.red,
+                borderRadius: BorderRadius.all(Radius.circular(8))
+              ),
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -71,7 +85,10 @@ class Home extends StatelessWidget {
                 CustomText(text: "Fund Wallet")
                ],)),
              Container(
-              color: Colors.red,
+              decoration:const BoxDecoration(
+                color: Colors.red,
+                borderRadius: BorderRadius.all(Radius.circular(8))
+              ),
               padding:const EdgeInsets.all(0),
               margin:const EdgeInsets.all(8.0),
               child:Column(
