@@ -24,6 +24,7 @@ class Home extends StatelessWidget {
       body:SafeArea(
         child: ListView(children: [
           _buildAppBar(greetings()),
+          _walletBalance(),
           const SizedBox(height:25),
           Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
