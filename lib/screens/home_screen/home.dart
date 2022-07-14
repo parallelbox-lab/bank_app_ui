@@ -11,6 +11,7 @@ class Home extends StatelessWidget {
           _buildAppBar(),
           Container(
             padding: const EdgeInsets.symmetric(vertical:20.0,horizontal: 15),
+            margin:const EdgeInsets.symmetric(horizontal: 15) ,
             decoration:const BoxDecoration(
               color:Colors.purple,
               borderRadius: BorderRadius.all(Radius.circular(8))
