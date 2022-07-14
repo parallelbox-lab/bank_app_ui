@@ -36,7 +36,7 @@ class Home extends StatelessWidget {
               children: [
              Container(
               decoration:const BoxDecoration(
-                color: Color(0x1A90ee90),
+                color: Color.fromARGB(26, 135, 239, 135),
                 borderRadius: BorderRadius.all(Radius.circular(8))
               ),
               padding:const EdgeInsets.all(0),
@@ -46,13 +46,13 @@ class Home extends StatelessWidget {
                 children:  [
                 const Icon(Icons.wallet_giftcard,color:Color(0xff90ee90)),
                 const SizedBox(height: 7,),
-                CustomText(text: "Fund Wallet",color: Color(0xff90ee90),)
+                CustomText(text: "Fund Wallet",color: Color(0xff90ee90),weight: FontWeight.bold,)
                ],)),
                Container(
               padding:const EdgeInsets.all(0),
               margin:const EdgeInsets.all(8.0),
               decoration:const BoxDecoration(
-                color: Color(0x1A5C3317),
+                color: Color.fromARGB(26, 83, 44, 19),
                 borderRadius: BorderRadius.all(Radius.circular(8))
               ),
                 child:Column(
@@ -60,13 +60,13 @@ class Home extends StatelessWidget {
                 children: [
                 const Icon(Icons.card_membership_outlined,color: Color(0xff5C3317)),
                 const SizedBox(height: 7,),
-                CustomText(text:"Send Funds",color: Color(0xff5C3317),)
+                CustomText(text:"Send Funds",color: Color(0xff5C3317),weight: FontWeight.bold,)
                ],)),
                Container(
               padding:const EdgeInsets.all(0),
               margin:const EdgeInsets.all(8.0),
               decoration:const BoxDecoration(
-                color: Colors.red,
+                color: Color(0x1AC04000),
                 borderRadius: BorderRadius.all(Radius.circular(8))
               ),
               child:Column(
@@ -74,7 +74,7 @@ class Home extends StatelessWidget {
                 children: [
                 const Icon(Icons.wallet_giftcard),
                 const SizedBox(height: 7,),
-                CustomText(text: "Cash Pin")
+                CustomText(text: "Cash Pin",color:Color(0xffC04000),weight: FontWeight.bold,)
                ],)),
               Container(
               padding:const EdgeInsets.all(0),
@@ -88,7 +88,7 @@ class Home extends StatelessWidget {
                 children: [
                 const Icon(Icons.wallet_giftcard),
                 const SizedBox(height: 7,),
-                CustomText(text: "Airtime")
+                CustomText(text: "Airtime",weight: FontWeight.bold,)
                ],)),
                Container(
               padding:const EdgeInsets.all(0),
@@ -102,7 +102,7 @@ class Home extends StatelessWidget {
                 children: [
                 const Icon(Icons.wallet_giftcard),
                 const SizedBox(height: 7,),
-                CustomText(text: "Pay Bills")
+                CustomText(text: "Pay Bills",weight: FontWeight.bold,)
                ],)),
              Container(
               decoration:const BoxDecoration(
@@ -116,7 +116,7 @@ class Home extends StatelessWidget {
                 children: [
                 const Icon(Icons.wallet_giftcard),
                 const SizedBox(height: 7,),
-                CustomText(text: "View All")
+                CustomText(text: "View All",weight: FontWeight.bold,)
                ],))
               ],
             ),
