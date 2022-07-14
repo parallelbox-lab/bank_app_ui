@@ -8,7 +8,17 @@ class Home extends StatelessWidget {
     return Scaffold(
       body:SafeArea(
         child: ListView(children: [
-          _buildAppBar()
+          _buildAppBar(),
+          Container(
+            child:Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(children: [
+                  Image.asset("assets/nigeria_logo.png",width:25),
+                  const SizedBox(width:5),
+                ],)
+            ],)
+          )
         ],),
       )
     );
@@ -26,8 +36,6 @@ class Home extends StatelessWidget {
               Image.asset('assets/search.png',width:30),
               const SizedBox(width:10),
               Image.asset('assets/comment.png',width:30),
-
-              
             ],
           ),
         );
