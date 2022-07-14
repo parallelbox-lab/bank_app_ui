@@ -19,13 +19,13 @@ class Home extends StatelessWidget {
           padding: const EdgeInsets.all(15.0),
           child: Row(
             children: [
-              Image.asset("assets/circleProfile.png"),
+              Image.asset("assets/CircleProfile.png",width:25),
               const SizedBox(width:5),
               const Text('Hi, Precious'),
               const Spacer(),
-              Image.asset('assets/search.png'),
-              const Spacer(),
-              Image.asset('assets/search.png'),
+              Image.asset('assets/search.png',width:25),
+              const SizedBox(width:5),
+              Image.asset('assets/search.png',width:25),
 
               
             ],
