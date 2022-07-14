@@ -6,11 +6,24 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String greetings() {
+      var hour = DateTime.now().hour;
+      if (hour < 12) {
+        //
+        return "Good Morning";
+      }
+      if (hour < 17) {
+        //
+        return "Good Afternoon";
+      }
+      //
+      return "Good Evening";
+    }
+
     return Scaffold(
       body:SafeArea(
         child: ListView(children: [
-          _buildAppBar(),
-          _walletBalance(),
+          _buildAppBar(greetings()),
           const SizedBox(height:25),
           Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -113,7 +126,7 @@ class Home extends StatelessWidget {
     );
   }
 
-  Container _walletBalance() {
+   _walletBalance() {
     return Container(
           padding: const EdgeInsets.symmetric(vertical:9.0,horizontal: 15),
           margin:const EdgeInsets.symmetric(horizontal: 15,vertical:5.0) ,
@@ -156,7 +169,7 @@ class Home extends StatelessWidget {
         );
   }
 
-   _buildAppBar() {
+   _buildAppBar(String greetings) {
     return Padding(
           padding: const EdgeInsets.symmetric(vertical:20.0,horizontal: 15),
           child: Row(
@@ -165,9 +178,9 @@ class Home extends StatelessWidget {
               const SizedBox(width:10),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
-                   Text('Hi, Precious'),
-                  CustomText(text: "Good Evening")
+                children:  [
+                  const Text('Hi, Precious,'),
+                  CustomText(text:greetings)
                 ],
               ),
               const Spacer(),
