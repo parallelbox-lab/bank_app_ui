@@ -53,14 +53,17 @@ class Home extends StatelessWidget {
               ],
             ),
              ),
-               ListView.builder(
+            ListView.separated(
+            separatorBuilder: (context, index) => const SizedBox(height:15),
             itemCount: 6,
             shrinkWrap: true,
              physics: const NeverScrollableScrollPhysics(),
             itemBuilder: (BuildContext context, i)=>
            ListTile(
             leading:Container(
+              padding:const EdgeInsets.all(20),
               decoration:const BoxDecoration(
+                color:Colors.grey,
               borderRadius: BorderRadius.all(Radius.circular(10)),
               ),
             child: const Icon(Icons.arrow_upward_outlined)),
