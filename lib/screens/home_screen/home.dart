@@ -34,6 +34,7 @@ class Home extends StatelessWidget {
                     ],
                   ),
                   style: TextButton.styleFrom(
+                padding:const EdgeInsets.all(10),
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(4.0)),
               primary: Colors.white,
