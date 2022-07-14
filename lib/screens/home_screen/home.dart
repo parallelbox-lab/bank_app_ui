@@ -20,28 +20,40 @@ class Home extends StatelessWidget {
               crossAxisCount: 3,
               crossAxisSpacing: 0.0,
               children: [
-             Container(color: Colors.red,
+             Container(
+              padding:const EdgeInsets.all(0),
+              margin:const EdgeInsets.all(8.0),
+              color: Colors.red,
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children:  [
                 const Icon(Icons.wallet_giftcard),
                 CustomText(text: "Fund Wallet",)
                ],)),
-               Container(color: Colors.red,
+               Container(
+              padding:const EdgeInsets.all(0),
+              margin:const EdgeInsets.all(8.0),
+              color: Colors.red,
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 const Icon(Icons.wallet_giftcard),
                 CustomText(text: "Fund Wallet")
                ],)),
-               Container(color: Colors.red,
+               Container(
+              padding:const EdgeInsets.all(0),
+              margin:const EdgeInsets.all(8.0),
+              color: Colors.red,
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 const Icon(Icons.wallet_giftcard),
                 CustomText(text: "Fund Wallet")
                ],)),
-               Container(color: Colors.red,
+              Container(
+              padding:const EdgeInsets.all(0),
+              margin:const EdgeInsets.all(8.0),
+              color: Colors.red,
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
