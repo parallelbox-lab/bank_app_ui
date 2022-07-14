@@ -22,37 +22,50 @@ class Home extends StatelessWidget {
 
     return Scaffold(
       body:SafeArea(
-        child: ListView(children: [
-          _buildAppBar(greetings()),
-          _walletBalance(),
-          const SizedBox(height:25),
-          _buildAction(),
-          const SizedBox(height: 25,),
-        Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 15),
-        child: Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-       const Text('Transactions',
-              style:
-                  TextStyle(fontWeight: FontWeight.w700)),
-        GestureDetector(
-          onTap: (){},
-          child:Row(
-            children:const [
-               Text('View all',
-              style:
-                      TextStyle(fontWeight: FontWeight.w700)
-                  ),
-            SizedBox(width:5),
-            Icon(Icons.arrow_forward)
-            ],
+        child: SingleChildScrollView(
+          child: Column(children: [
+            _buildAppBar(greetings()),
+            _walletBalance(),
+            const SizedBox(height:25),
+            _buildAction(),
+            const SizedBox(height: 25,),
+          Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+          child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+               const Text('Transactions',
+                style:
+                    TextStyle(fontWeight: FontWeight.w700)),
+          GestureDetector(
+            onTap: (){},
+            child:Row(
+              children:const [
+                 Text('View all',
+                style:
+                        TextStyle(fontWeight: FontWeight.w700)
+                    ),
+              SizedBox(width:5),
+              Icon(Icons.arrow_forward)
+              ],
+            ),
           ),
+              ],
+            ),
+             ),
+               ListView.builder(
+            itemCount: 6,
+            shrinkWrap: true,
+             physics: const NeverScrollableScrollPhysics(),
+            itemBuilder: (BuildContext context, i)=>
+           ListTile(
+            leading:const Icon(Icons.arrow_upward_outlined),
+            title: CustomText(text: "UBER Ride",
+            ),
+           )),
+               
+          ],),
         ),
-      ],
-    ),
-           )
-        ],),
       )
     );
   }
