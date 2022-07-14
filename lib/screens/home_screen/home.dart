@@ -22,6 +22,9 @@ class Home extends StatelessWidget {
                 Row(children: [
                   Image.asset("assets/nigeria_logo.jpg",width:25),
                   const SizedBox(width:5),
+                  const Text("Wallet Balance"),
+                  Expanded(child: TextButton(onPressed:(){},
+                  child:const Text('Refresh Balance'),))
                 ],)
             ],)
           )
