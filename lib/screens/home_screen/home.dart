@@ -30,7 +30,8 @@ class Home extends StatelessWidget {
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children:  [
-                const Icon(Icons.wallet_giftcard),
+                const Icon(Icons.wallet_giftcard,color:Color(0xff90ee90)),
+                const SizedBox(height: 7,),
                 CustomText(text: "Fund Wallet",color: Color(0xff90ee90),)
                ],)),
                Container(
@@ -44,6 +45,7 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 const Icon(Icons.card_membership_outlined),
+                const SizedBox(height: 7,),
                 CustomText(text:"Send Funds")
                ],)),
                Container(
