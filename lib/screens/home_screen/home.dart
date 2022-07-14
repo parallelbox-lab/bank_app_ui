@@ -15,7 +15,7 @@ class Home extends StatelessWidget {
           Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
             child: GridView.count(
-              padding:const EdgeInsets.all(5),
+              padding:const EdgeInsets.all(1),
               shrinkWrap: true,
               crossAxisCount: 3,
               crossAxisSpacing: 0.0,
@@ -44,7 +44,7 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 const Icon(Icons.wallet_giftcard),
-                CustomText(text: "Fund Wallet")
+                CustomText(text:"Send Funds")
                ],)),
                Container(
               padding:const EdgeInsets.all(0),
@@ -57,7 +57,7 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 const Icon(Icons.wallet_giftcard),
-                CustomText(text: "Fund Wallet")
+                CustomText(text: "Cash Pin")
                ],)),
               Container(
               padding:const EdgeInsets.all(0),
@@ -70,7 +70,7 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 const Icon(Icons.wallet_giftcard),
-                CustomText(text: "Fund Wallet")
+                CustomText(text: "Airtime")
                ],)),
                Container(
               padding:const EdgeInsets.all(0),
@@ -83,7 +83,7 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 const Icon(Icons.wallet_giftcard),
-                CustomText(text: "Fund Wallet")
+                CustomText(text: "Pay Bills")
                ],)),
              Container(
               decoration:const BoxDecoration(
@@ -96,7 +96,7 @@ class Home extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                 const Icon(Icons.wallet_giftcard),
-                CustomText(text: "Fund Wallet")
+                CustomText(text: "View All")
                ],))
               ],
             ),
