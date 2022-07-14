@@ -38,15 +38,15 @@ class Home extends StatelessWidget {
               padding:const EdgeInsets.all(0),
               margin:const EdgeInsets.all(8.0),
               decoration:const BoxDecoration(
-                color: Colors.red,
+                color: Color(0x1A5C3317),
                 borderRadius: BorderRadius.all(Radius.circular(8))
               ),
                 child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                const Icon(Icons.card_membership_outlined),
+                const Icon(Icons.card_membership_outlined,color: Color(0xff5C3317)),
                 const SizedBox(height: 7,),
-                CustomText(text:"Send Funds")
+                CustomText(text:"Send Funds",color: Color(0xff5C3317),)
                ],)),
                Container(
               padding:const EdgeInsets.all(0),
