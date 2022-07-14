@@ -163,7 +163,13 @@ class Home extends StatelessWidget {
             children: [
               Image.asset("assets/CircleProfile.png",width:30),
               const SizedBox(width:10),
-              const Text('Hi, Precious'),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                   Text('Hi, Precious'),
+                  CustomText(text: "Good Evening")
+                ],
+              ),
               const Spacer(),
               Image.asset('assets/search.png',width:30),
               const SizedBox(width:10),
