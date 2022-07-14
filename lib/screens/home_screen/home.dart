@@ -10,7 +10,68 @@ class Home extends StatelessWidget {
       body:SafeArea(
         child: ListView(children: [
           _buildAppBar(),
-          _walletBalance()
+          _walletBalance(),
+          const SizedBox(height:25),
+          Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15),
+            child: GridView.count(
+              padding:const EdgeInsets.all(5),
+              shrinkWrap: true,
+              crossAxisCount: 3,
+              crossAxisSpacing: 0.0,
+              children: [
+             Container(color: Colors.red,
+              child:Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children:  [
+                const Icon(Icons.wallet_giftcard),
+                CustomText(text: "Fund Wallet",)
+               ],)),
+               Container(color: Colors.red,
+              child:Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                const Icon(Icons.wallet_giftcard),
+                CustomText(text: "Fund Wallet")
+               ],)),
+               Container(color: Colors.red,
+              child:Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                const Icon(Icons.wallet_giftcard),
+                CustomText(text: "Fund Wallet")
+               ],)),
+               Container(color: Colors.red,
+              child:Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                const Icon(Icons.wallet_giftcard),
+                CustomText(text: "Fund Wallet")
+               ],)),
+               Container(
+              padding:const EdgeInsets.all(0),
+              margin:const EdgeInsets.all(8.0),
+              color: Colors.red,
+              child:Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                const Icon(Icons.wallet_giftcard),
+                CustomText(text: "Fund Wallet")
+               ],)),
+             Container(
+              color: Colors.red,
+              padding:const EdgeInsets.all(0),
+              margin:const EdgeInsets.all(8.0),
+              child:Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                const Icon(Icons.wallet_giftcard),
+                CustomText(text: "Fund Wallet")
+               ],))
+              ],
+            ),
+          )
+
         ],),
       )
     );
