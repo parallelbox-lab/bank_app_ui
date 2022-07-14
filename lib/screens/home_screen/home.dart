@@ -20,11 +20,11 @@ class Home extends StatelessWidget {
           child: Row(
             children: [
               Image.asset("assets/CircleProfile.png",width:30),
-              const SizedBox(width:5),
+              const SizedBox(width:10),
               const Text('Hi, Precious'),
               const Spacer(),
               Image.asset('assets/search.png',width:30),
-              const SizedBox(width:5),
+              const SizedBox(width:10),
               Image.asset('assets/comment.png',width:30),
 
               
