@@ -16,16 +16,16 @@ class Home extends StatelessWidget {
 
    _buildAppBar() {
     return Padding(
-          padding: const EdgeInsets.all(15.0),
+          padding: const EdgeInsets.symmetric(vertical:20.0,horizontal: 15),
           child: Row(
             children: [
-              Image.asset("assets/CircleProfile.png",width:25),
+              Image.asset("assets/CircleProfile.png",width:30),
               const SizedBox(width:5),
               const Text('Hi, Precious'),
               const Spacer(),
-              Image.asset('assets/search.png',width:25),
+              Image.asset('assets/search.png',width:30),
               const SizedBox(width:5),
-              Image.asset('assets/search.png',width:25),
+              Image.asset('assets/comment.png',width:30),
 
               
             ],
