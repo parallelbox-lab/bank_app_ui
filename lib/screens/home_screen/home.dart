@@ -80,7 +80,7 @@ class Home extends StatelessWidget {
               padding:const EdgeInsets.all(0),
               margin:const EdgeInsets.all(8.0),
               decoration:const BoxDecoration(
-                color: Colors.red,
+                color: Color(0x1AFF0000),
                 borderRadius: BorderRadius.all(Radius.circular(8))
               ),
               child:Column(
@@ -88,25 +88,25 @@ class Home extends StatelessWidget {
                 children: [
                 const Icon(Icons.wallet_giftcard),
                 const SizedBox(height: 7,),
-                CustomText(text: "Airtime",weight: FontWeight.bold,)
+                CustomText(text: "Airtime",color:Color(0xffFF0000),weight: FontWeight.bold,)
                ],)),
                Container(
               padding:const EdgeInsets.all(0),
               margin:const EdgeInsets.all(8.0),
               decoration:const BoxDecoration(
-                color: Colors.red,
+                color: Color(0x1A6A0DAD),
                 borderRadius: BorderRadius.all(Radius.circular(8))
               ),
               child:Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                const Icon(Icons.wallet_giftcard),
+                const Icon(Icons.wallet_giftcard,),
                 const SizedBox(height: 7,),
-                CustomText(text: "Pay Bills",weight: FontWeight.bold,)
+                CustomText(text: "Pay Bills",color:Color(0xff6A0DAD),weight: FontWeight.bold,)
                ],)),
              Container(
               decoration:const BoxDecoration(
-                color: Colors.red,
+                color: Color(0x1A7D0552),
                 borderRadius: BorderRadius.all(Radius.circular(8))
               ),
               padding:const EdgeInsets.all(0),
@@ -116,7 +116,7 @@ class Home extends StatelessWidget {
                 children: [
                 const Icon(Icons.wallet_giftcard),
                 const SizedBox(height: 7,),
-                CustomText(text: "View All",weight: FontWeight.bold,)
+                CustomText(text: "View All",color:Color(0xff7D0552),weight: FontWeight.bold,)
                ],))
               ],
             ),
