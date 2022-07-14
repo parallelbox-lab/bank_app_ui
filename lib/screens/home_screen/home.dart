@@ -14,7 +14,7 @@ class Home extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical:9.0,horizontal: 15),
             margin:const EdgeInsets.symmetric(horizontal: 15,vertical:5.0) ,
             decoration:const BoxDecoration(
-              color:Colors.purple,
+              color:Colors.deepPurple,
               borderRadius: BorderRadius.all(Radius.circular(8))
             ),
             child:Column(
@@ -26,7 +26,13 @@ class Home extends StatelessWidget {
                   const CustomText(text: "Wallet Balance",color: Colors.white,),
                  const Spacer(),
                   TextButton(onPressed:(){},
-                  child:const Text('Refresh Balance'),)
+                  child:const Text('Refresh Balance'),
+                  style: TextButton.styleFrom(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0)),
+              primary: Colors.white,
+              backgroundColor: Colors.purpleAccent,
+            ),)
                 ],),
                const SizedBox(height:25),
                Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
