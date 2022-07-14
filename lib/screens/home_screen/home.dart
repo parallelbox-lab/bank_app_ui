@@ -58,8 +58,10 @@ class Home extends StatelessWidget {
             shrinkWrap: true,
              physics: const NeverScrollableScrollPhysics(),
             itemBuilder: (BuildContext context, i)=>
-           ListTile(
-            leading:const Icon(Icons.arrow_upward_outlined),
+          const ListTile(
+            leading:ClipRRect(
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+            child: const Icon(Icons.arrow_upward_outlined)),
             title: CustomText(text: "UBER Ride",
             ),
            )),
