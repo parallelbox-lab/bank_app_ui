@@ -153,7 +153,7 @@ class Home extends StatelessWidget {
               children: [
               const Icon(Icons.wallet_giftcard),
               const SizedBox(height: 7,),
-              CustomText(text: "Airtime",color:Color(0xffFF0000),weight: FontWeight.bold,)
+              CustomText(text: "Airtime",size:11.sp,color:Color(0xffFF0000),weight: FontWeight.bold,)
              ],)),
              Container(
             padding:const EdgeInsets.all(0),
