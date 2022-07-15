@@ -76,7 +76,7 @@ class Home extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(10)),
             ),
           child: const Icon(Icons.call_received)),
-          title:const CustomText(text: "UBER Ride",
+          title: CustomText(text: "UBER Ride",size:12.sp,weight: FontWeight.bold,
           ),
           subtitle: Row(children: const [
             Text('27-Apr'), SizedBox(width:7,),Text('8.00pm')
@@ -84,7 +84,7 @@ class Home extends StatelessWidget {
           trailing: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children:  [
-            CustomText(text:'N57,000',color:Colors.purple,size:11.sp),const SizedBox(height:10,), const CustomText(text:'in progress',color:Colors.orangeAccent)
+            CustomText(text:'N57,000',color:Colors.purple,size:11.sp),const SizedBox(height:10,),  CustomText(text:'in progress',size:11.sp,color:Colors.orangeAccent)
           ],),
          ));
   }
