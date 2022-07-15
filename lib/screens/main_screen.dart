@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_travel_concept/widgets/icon_badge.dart';
 
 class MainScreen extends StatefulWidget {
+ const MainScreen({ Key? key }) : super(key: key);
+
   @override
   _MainScreenState createState() => _MainScreenState();
 }

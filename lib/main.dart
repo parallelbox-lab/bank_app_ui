@@ -1,4 +1,4 @@
-import 'package:bank_app_ui/screens/home_screen/home.dart';
+import 'package:bank_app_ui/screens/main_screen.dart';
 import 'package:bank_app_ui/utils/app_theme.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      home: const Home(),
+      home: const MainScreen(),
     );
   }
 }
