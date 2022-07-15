@@ -147,9 +147,9 @@ class Home extends StatelessWidget {
                               child:Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                CustomText(text: "Cashpin",size:11.sp),
+                                CustomText(text: "Bank Transfer",size:11.sp),
                                const SizedBox(height:7),
-                                CustomText(text: "Redeem a cash pin to add money to wallet",size:11.sp)
+                                CustomText(text: "Fund your account to through your other bank apps",size:11.sp)
                               ],)
                             )
                             
