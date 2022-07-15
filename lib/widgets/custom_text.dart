@@ -19,12 +19,12 @@ class CustomText extends StatelessWidget {
       : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Text(text ?? '',
-        style: 
-             TextStyle(
+     return Text(text ?? '',
+        style: GoogleFonts.muli(
+            textStyle: TextStyle(
                 letterSpacing: letterspacing,
-                fontSize: size,
+                fontSize: size ?? 14.sp,
                 color: color,
-                fontWeight: weight ?? FontWeight.normal));
+                fontWeight: weight ?? FontWeight.normal)));
   }
 }
