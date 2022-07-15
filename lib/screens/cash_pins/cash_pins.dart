@@ -9,6 +9,7 @@ class CashPins extends StatelessWidget {
     return Scaffold(
       appBar:AppBar(
         title:const CustomText(text: "Cashpins"),
+        centerTitle: true,
         elevation:2
       ),
       body: Padding(
