@@ -1,4 +1,5 @@
 import 'package:bank_app_ui/screens/home_screen/home.dart';
+import 'package:bank_app_ui/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter_travel_concept/widgets/icon_badge.dart';
 
@@ -27,12 +28,12 @@ class _MainScreenState extends State<MainScreen> {
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
-            SizedBox(width: 7.0),
-            barIcon(icon: Icons.home, page: 0),
-            barIcon(icon: Icons.favorite, page: 1),
-            barIcon(icon: Icons.mode_comment, page: 2, badge: true),
-            barIcon(icon: Icons.person, page: 3),
-            SizedBox(width: 7.0),
+           const SizedBox(width: 7.0),
+            barIcon(icon: Icons.home, text:"Home", page: 0),
+            barIcon(icon: Icons.pin, text:"CashPins", page: 1),
+            barIcon(icon: Icons.card_giftcard_outlined,text:"Cards", page: 2, badge: true),
+            barIcon(icon: Icons.menu,text:"Menu", page: 3),
+           const  SizedBox(width: 7.0),
           ],
         ),
         color: Theme.of(context).primaryColor,
@@ -63,12 +64,17 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   Widget barIcon(
-      {IconData icon = Icons.home, int page = 0, bool badge = false}) {
-    return IconButton(
-      icon:  Icon(icon, size: 24.0),
-      color:
-          _page == page ? Theme.of(context).accentColor : Colors.blueGrey[300],
-      onPressed: () => _pageController?.jumpToPage(page),
+      {IconData icon = Icons.home, String? text, int page = 0, bool badge = false}) {
+    return Column(
+      children: [
+        IconButton(
+          icon:  Icon(icon, size: 24.0),
+          color:
+              _page == page ? Theme.of(context).accentColor : Colors.blueGrey[300],
+          onPressed: () => _pageController?.jumpToPage(page),
+        ),
+        CustomText(text: text)
+      ],
     );
   }
 }
