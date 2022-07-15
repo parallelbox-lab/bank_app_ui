@@ -1,3 +1,4 @@
+import 'package:bank_app_ui/screens/cash_pins/cash_pins.dart';
 import 'package:bank_app_ui/screens/home_screen/home.dart';
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,7 @@ class MainScreen extends StatefulWidget {
 class _MainScreenState extends State<MainScreen> {
   final List<Widget> _pages = <Widget>[
   const Home(),
+  const CashPins()
   ];
   final PageController _pageController = PageController();
   int _selectedIndex = 0;
