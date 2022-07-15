@@ -72,7 +72,9 @@ class Home extends StatelessWidget {
             subtitle: Row(children: const [
               Text('27-Apr'), SizedBox(width:7,),Text('8.00pm')
             ],),
-            trailing: Column(children: const [
+            trailing: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
               Text('N57,000'), SizedBox(width:7,),Text('in progress')
             ],),
            )),
