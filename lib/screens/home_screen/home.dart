@@ -1,5 +1,6 @@
 import 'package:bank_app_ui/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 class Home extends StatelessWidget {
   const Home({ Key? key }) : super(key: key);
@@ -240,8 +241,8 @@ class Home extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children:  [
-                  const Text('Hi, Precious,'),
-                  CustomText(text:greetings)
+                    CustomText(text:'Hi, Precious,',size:13.sp),
+                  CustomText(text:greetings,size:13.sp)
                 ],
               ),
               const Spacer(),
