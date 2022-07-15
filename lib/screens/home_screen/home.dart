@@ -75,7 +75,7 @@ class Home extends StatelessWidget {
             trailing: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: const [
-              Text('N57,000'), SizedBox(width:7,),Text('in progress')
+              CustomText(text:'N57,000',color:Colors.purple), SizedBox(height:10,),CustomText(text:'in progress',color:Colors.orangeAccent)
             ],),
            )),
                
