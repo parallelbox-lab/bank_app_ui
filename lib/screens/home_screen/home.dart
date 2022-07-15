@@ -111,7 +111,7 @@ class Home extends StatelessWidget {
               children:  [
               const Icon(Icons.wallet_giftcard,color:Color(0xff90ee90)),
               const SizedBox(height: 7,),
-              CustomText(text: "Fund Wallet",color: Color(0xff90ee90),weight: FontWeight.bold,)
+              CustomText(text: "Fund Wallet",color: Color(0xff90ee90),weight: FontWeight.bold,size:11.sp)
              ],)),
              Container(
             padding:const EdgeInsets.all(0),
