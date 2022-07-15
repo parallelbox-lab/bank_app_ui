@@ -428,8 +428,7 @@ class Home extends StatelessWidget {
                                const SizedBox(height:7),
                                 CustomText(text: "Fund your account to through your other bank apps",size:11.sp)
                               ],)
-                            )
-                            
+                            )                           
                         ],),
                       ));
               },
@@ -448,20 +447,90 @@ class Home extends StatelessWidget {
                 CustomText(text: "Pay Bills",size:11.sp,color:const Color(0xff6A0DAD),weight: FontWeight.bold,)
                ],)),
              ),
-           Container(
-            decoration:const BoxDecoration(
-              color: Color(0x1A7D0552),
-              borderRadius: BorderRadius.all(Radius.circular(8))
-            ),
-            padding:const EdgeInsets.all(0),
-            margin:const EdgeInsets.all(8.0),
-            child:Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-              const Icon(Icons.wallet_giftcard),
-              const SizedBox(height: 7,),
-              CustomText(text: "View All",size:11.sp,color:const Color(0xff7D0552),weight: FontWeight.bold,)
-             ],))
+           InkWell(
+              onTap: (){
+               showModalBottomSheet(
+                      isScrollControlled:
+                          false,
+                      backgroundColor:
+                          Colors.white,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.vertical(
+                          top: Radius.circular(20),
+                        ),
+                      ),
+                      context: context,
+                      enableDrag: true,
+                      builder: (context) => Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          crossAxisAlignment:CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CustomText(text: "Select funding method", size:16.sp, weight:FontWeight.bold),
+                                Container(
+                                padding: EdgeInsets.zero,
+                                decoration: BoxDecoration(
+                                border: Border.all(width: 1),
+                                borderRadius:const BorderRadius.all(Radius.circular(7))
+                              ),
+                                  child: IconButton(onPressed: (){}, icon:const Icon(Icons.close,size:20)))
+                              ],
+                            ),
+                            const SizedBox(height:20),
+                            Container(
+                              width: double.infinity,
+                              padding:const EdgeInsets.all(9),
+                              decoration: BoxDecoration(
+                                border: Border.all(width: 1),
+                                borderRadius:const BorderRadius.all(Radius.circular(8))
+                              ),
+                              child:Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                CustomText(text: "Cashpin",size:11.sp),
+                               const SizedBox(height:7),
+                                CustomText(text: "Redeem a cash pin to add money to wallet",size:11.sp)
+                              ],)
+                            ),
+                           const SizedBox(height: 10,),
+                            Container(
+                              width: double.infinity,
+                              padding:const EdgeInsets.all(9),
+                              decoration: BoxDecoration(
+                                border: Border.all(width: 1),
+                                borderRadius:const BorderRadius.all(Radius.circular(8))
+                              ),
+                              child:Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                CustomText(text: "Bank Transfer",size:11.sp),
+                               const SizedBox(height:7),
+                                CustomText(text: "Fund your account to through your other bank apps",size:11.sp)
+                              ],)
+                            )
+                            
+                        ],),
+                      ));
+  },
+             child: Container(
+              decoration:const BoxDecoration(
+                color: Color(0x1A7D0552),
+                borderRadius: BorderRadius.all(Radius.circular(8))
+              ),
+              padding:const EdgeInsets.all(0),
+              margin:const EdgeInsets.all(8.0),
+              child:Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                const Icon(Icons.wallet_giftcard),
+                const SizedBox(height: 7,),
+                CustomText(text: "View All",size:11.sp,color:const Color(0xff7D0552),weight: FontWeight.bold,)
+               ],)),
+           )
             ],
           ),
         );
