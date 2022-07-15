@@ -105,7 +105,7 @@ class Home extends StatelessWidget {
                       isScrollControlled:
                           false,
                       backgroundColor:
-                          Colors.transparent,
+                          Colors.white,
                       shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.vertical(
                           top: Radius.circular(20),
@@ -116,6 +116,7 @@ class Home extends StatelessWidget {
                       builder: (context) => Padding(
                         padding: const EdgeInsets.all(10.0),
                         child: Column(
+                          crossAxisAlignment:CrossAxisAlignment.start,
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             CustomText(text: "Select funding method", size:16.sp, weight:FontWeight.bold),
