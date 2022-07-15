@@ -60,10 +60,8 @@ class _MainScreenState extends State<MainScreen> {
               BottomNavigationBarItem(
                 icon: Container(
                     margin: const EdgeInsets.only(bottom: 10),
-                    child: Image.asset(
-                      'assets/images/Home.png',
-                      width: 25,
-                      height: 25,
+                    child: Icon(
+                     Icons.home,
                       color: _selectedIndex == 0 ? Colors.black : Colors.grey,
                     )),
                 label: 'Home',
@@ -71,20 +69,18 @@ class _MainScreenState extends State<MainScreen> {
               BottomNavigationBarItem(
                 icon: Container(
                     margin: const EdgeInsets.only(bottom: 10),
-                    child:Image.asset('assets/images/search.png',
+                    child:Icon(Icons.pin,
                         color: _selectedIndex == 1 ? Colors.black : Colors.grey,
-                        width: 25,
-                        height: 25)),
-                label: 'Articles',
+                        )),
+                label: 'Cashpins',
               ),
               BottomNavigationBarItem(
                 icon: Container(
                     margin: const EdgeInsets.only(bottom: 10),
-                    child: Image.asset('assets/images/Profile.png',
+                    child: Icon(Icons.card_giftcard_outlined,
                         color: _selectedIndex == 2 ? Colors.black : Colors.grey,
-                        width: 25,
-                        height: 25)),
-                label: 'Profile',
+                        )),
+                label: 'Cards',
               ),
             ],
             type: BottomNavigationBarType.fixed),
