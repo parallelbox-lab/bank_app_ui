@@ -201,7 +201,7 @@ class Home extends StatelessWidget {
             children: [
               Row(children: [
                 Image.asset("assets/nigeria_logo.jpg",width:25),
-                const SizedBox(width:10),
+                const SizedBox(width:5),
                 const CustomText(text: "Wallet Balance",color: Colors.white,),
                const Spacer(),
                 TextButton(onPressed:(){},
