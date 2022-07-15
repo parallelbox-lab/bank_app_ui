@@ -66,7 +66,7 @@ class Home extends StatelessWidget {
                 color:Colors.grey,
               borderRadius: BorderRadius.all(Radius.circular(10)),
               ),
-            child: const Icon(Icons.arrow_upward_outlined)),
+            child: const Icon(Icons.call_received)),
             title:const CustomText(text: "UBER Ride",
             ),
             subtitle: Row(children: const [
