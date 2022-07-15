@@ -125,6 +125,13 @@ class Home extends StatelessWidget {
                                 border: Border.all(width: 1),
                                 borderRadius:const BorderRadius.all(Radius.circular(16))
                               ),
+                              child:Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                CustomText(text: "Cashpin",size:11.sp),
+                               const SizedBox(height:7),
+                                CustomText(text: "Redeem a cash pin to add money to wallet",size:11.sp)
+                              ],)
                             )
                             
 
