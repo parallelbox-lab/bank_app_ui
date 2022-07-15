@@ -181,7 +181,7 @@ class Home extends StatelessWidget {
               children: [
               const Icon(Icons.wallet_giftcard),
               const SizedBox(height: 7,),
-              CustomText(text: "View All",color:Color(0xff7D0552),weight: FontWeight.bold,)
+              CustomText(text: "View All",size:11.sp,color:Color(0xff7D0552),weight: FontWeight.bold,)
              ],))
             ],
           ),
