@@ -206,10 +206,10 @@ class Home extends StatelessWidget {
                const Spacer(),
                 TextButton(onPressed:(){},
                 child:Row(
-                  children: const [
-                  Icon(Icons.refresh),
-                  SizedBox(width:5),
-                  CustomText(text: 'Refresh Balance',color: Colors.white,),
+                  children:  [
+                const  Icon(Icons.refresh),
+                const  SizedBox(width:5),
+                  CustomText(text: 'Refresh Balance',color: Colors.white,size:14.sp),
                   ],
                 ),
                 style: TextButton.styleFrom(
