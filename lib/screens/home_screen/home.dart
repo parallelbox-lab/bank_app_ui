@@ -69,6 +69,12 @@ class Home extends StatelessWidget {
             child: const Icon(Icons.arrow_upward_outlined)),
             title:const CustomText(text: "UBER Ride",
             ),
+            subtitle: Row(children: const [
+              Text('27-Apr'), SizedBox(width:7,),Text('8.00pm')
+            ],),
+            trailing: Column(children: const [
+              Text('N57,000'), SizedBox(width:7,),Text('in progress')
+            ],),
            )),
                
           ],),
