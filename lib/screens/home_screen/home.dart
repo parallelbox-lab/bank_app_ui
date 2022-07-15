@@ -125,7 +125,7 @@ class Home extends StatelessWidget {
               children: [
               const Icon(Icons.card_membership_outlined,color: Color(0xff5C3317)),
               const SizedBox(height: 7,),
-              CustomText(text:"Send Funds",color: Color(0xff5C3317),weight: FontWeight.bold,)
+              CustomText(text:"Send Funds",color:const Color(0xff5C3317),weight: FontWeight.bold,size:11.sp)
              ],)),
              Container(
             padding:const EdgeInsets.all(0),
@@ -139,7 +139,7 @@ class Home extends StatelessWidget {
               children: [
               const Icon(Icons.wallet_giftcard),
               const SizedBox(height: 7,),
-              CustomText(text: "Cash Pin",color:Color(0xffC04000),weight: FontWeight.bold,)
+              CustomText(text: "Cash Pin",size:11.sp,color:Color(0xffC04000),weight: FontWeight.bold,)
              ],)),
             Container(
             padding:const EdgeInsets.all(0),
