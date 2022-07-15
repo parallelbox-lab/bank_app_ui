@@ -93,7 +93,7 @@ class Home extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 15),
           child: GridView.count(
             padding:const EdgeInsets.all(1),
-            shrinkWrap: true,
+            // shrinkWrap: true,
             crossAxisCount: 3,
             crossAxisSpacing: 0.0,
             children: [
