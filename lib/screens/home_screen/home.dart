@@ -124,6 +124,7 @@ class Home extends StatelessWidget {
                               children: [
                                 CustomText(text: "Select funding method", size:16.sp, weight:FontWeight.bold),
                                 Container(
+                                padding: EdgeInsets.zero,
                                 decoration: BoxDecoration(
                                 border: Border.all(width: 1),
                                 borderRadius:const BorderRadius.all(Radius.circular(7))
@@ -182,20 +183,90 @@ class Home extends StatelessWidget {
                 CustomText(text: "Fund Wallet",color: Color(0xff90ee90),weight: FontWeight.bold,size:11.sp)
                ],)),
            ),
-             Container(
-            padding:const EdgeInsets.all(0),
-            margin:const EdgeInsets.all(8.0),
-            decoration:const BoxDecoration(
-              color: Color.fromARGB(26, 83, 44, 19),
-              borderRadius: BorderRadius.all(Radius.circular(8))
-            ),
-              child:Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-              const Icon(Icons.card_membership_outlined,color: Color(0xff5C3317)),
-              const SizedBox(height: 7,),
-              CustomText(text:"Send Funds",color:const Color(0xff5C3317),weight: FontWeight.bold,size:11.sp)
-             ],)),
+             InkWell(
+                onTap: (){
+               showModalBottomSheet(
+                      isScrollControlled:
+                          false,
+                      backgroundColor:
+                          Colors.white,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.vertical(
+                          top: Radius.circular(20),
+                        ),
+                      ),
+                      context: context,
+                      enableDrag: true,
+                      builder: (context) => Padding(
+                        padding: const EdgeInsets.all(20.0),
+                        child: Column(
+                          crossAxisAlignment:CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CustomText(text: "Select funding method", size:16.sp, weight:FontWeight.bold),
+                                Container(
+                                padding: EdgeInsets.zero,
+                                decoration: BoxDecoration(
+                                border: Border.all(width: 1),
+                                borderRadius:const BorderRadius.all(Radius.circular(7))
+                              ),
+                                  child: IconButton(onPressed: (){}, icon:const Icon(Icons.close,size:20)))
+                              ],
+                            ),
+                            const SizedBox(height:20),
+                            Container(
+                              width: double.infinity,
+                              padding:const EdgeInsets.all(9),
+                              decoration: BoxDecoration(
+                                border: Border.all(width: 1),
+                                borderRadius:const BorderRadius.all(Radius.circular(8))
+                              ),
+                              child:Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                CustomText(text: "Cashpin",size:11.sp),
+                               const SizedBox(height:7),
+                                CustomText(text: "Redeem a cash pin to add money to wallet",size:11.sp)
+                              ],)
+                            ),
+                           const SizedBox(height: 10,),
+                            Container(
+                              width: double.infinity,
+                              padding:const EdgeInsets.all(9),
+                              decoration: BoxDecoration(
+                                border: Border.all(width: 1),
+                                borderRadius:const BorderRadius.all(Radius.circular(8))
+                              ),
+                              child:Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                CustomText(text: "Bank Transfer",size:11.sp),
+                               const SizedBox(height:7),
+                                CustomText(text: "Fund your account to through your other bank apps",size:11.sp)
+                              ],)
+                            )
+                            
+                        ],),
+                      ));
+                },
+               child: Container(
+                         padding:const EdgeInsets.all(0),
+                         margin:const EdgeInsets.all(8.0),
+                         decoration:const BoxDecoration(
+                color: Color.fromARGB(26, 83, 44, 19),
+                borderRadius: BorderRadius.all(Radius.circular(8))
+                         ),
+                child:Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                const Icon(Icons.card_membership_outlined,color: Color(0xff5C3317)),
+                const SizedBox(height: 7,),
+                CustomText(text:"Send Funds",color:const Color(0xff5C3317),weight: FontWeight.bold,size:11.sp)
+               ],)),
+             ),
              Container(
             padding:const EdgeInsets.all(0),
             margin:const EdgeInsets.all(8.0),
