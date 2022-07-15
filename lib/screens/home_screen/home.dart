@@ -119,7 +119,18 @@ class Home extends StatelessWidget {
                           crossAxisAlignment:CrossAxisAlignment.start,
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            CustomText(text: "Select funding method", size:16.sp, weight:FontWeight.bold),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                CustomText(text: "Select funding method", size:16.sp, weight:FontWeight.bold),
+                                Container(
+                                decoration: BoxDecoration(
+                                border: Border.all(width: 1),
+                                borderRadius:const BorderRadius.all(Radius.circular(7))
+                              ),
+                                  child: IconButton(onPressed: (){}, icon:const Icon(Icons.close,size:20)))
+                              ],
+                            ),
                             const SizedBox(height:20),
                             Container(
                               width: double.infinity,
@@ -153,7 +164,6 @@ class Home extends StatelessWidget {
                               ],)
                             )
                             
-
                         ],),
                       ));
             },
