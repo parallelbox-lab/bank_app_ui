@@ -53,36 +53,39 @@ class Home extends StatelessWidget {
               ],
             ),
              ),
-            ListView.separated(
-            separatorBuilder: (context, index) => const SizedBox(height:15),
-            itemCount: 6,
-            shrinkWrap: true,
-             physics: const NeverScrollableScrollPhysics(),
-            itemBuilder: (BuildContext context, i)=>
-           ListTile(
-            leading:Container(
-              padding:const EdgeInsets.all(20),
-              decoration:const BoxDecoration(
-                color:Colors.grey,
-              borderRadius: BorderRadius.all(Radius.circular(10)),
-              ),
-            child: const Icon(Icons.call_received)),
-            title:const CustomText(text: "UBER Ride",
-            ),
-            subtitle: Row(children: const [
-              Text('27-Apr'), SizedBox(width:7,),Text('8.00pm')
-            ],),
-            trailing: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
-              CustomText(text:'N57,000',color:Colors.purple), SizedBox(height:10,),CustomText(text:'in progress',color:Colors.orangeAccent)
-            ],),
-           )),
-               
+            _buildTransactionList(),   
           ],),
         ),
       )
     );
+  }
+
+  ListView _buildTransactionList() {
+    return ListView.separated(
+          separatorBuilder: (context, index) => const SizedBox(height:15),
+          itemCount: 6,
+          shrinkWrap: true,
+           physics: const NeverScrollableScrollPhysics(),
+          itemBuilder: (BuildContext context, i)=>
+         ListTile(
+          leading:Container(
+            padding:const EdgeInsets.all(20),
+            decoration:const BoxDecoration(
+              color:Colors.grey,
+            borderRadius: BorderRadius.all(Radius.circular(10)),
+            ),
+          child: const Icon(Icons.call_received)),
+          title:const CustomText(text: "UBER Ride",
+          ),
+          subtitle: Row(children: const [
+            Text('27-Apr'), SizedBox(width:7,),Text('8.00pm')
+          ],),
+          trailing: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: const [
+            CustomText(text:'N57,000',color:Colors.purple), SizedBox(height:10,),CustomText(text:'in progress',color:Colors.orangeAccent)
+          ],),
+         ));
   }
 
   Padding _buildAction() {

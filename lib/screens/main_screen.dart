@@ -82,6 +82,14 @@ class _MainScreenState extends State<MainScreen> {
                         )),
                 label: 'Cards',
               ),
+              BottomNavigationBarItem(
+                icon: Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    child: Icon(Icons.menu_open,
+                        color: _selectedIndex == 2 ? Colors.black : Colors.grey,
+                        )),
+                label: 'Menu',
+              ),
             ],
             type: BottomNavigationBarType.fixed),
       ),
