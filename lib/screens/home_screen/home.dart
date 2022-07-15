@@ -114,16 +114,35 @@ class Home extends StatelessWidget {
                       context: context,
                       enableDrag: true,
                       builder: (context) => Padding(
-                        padding: const EdgeInsets.all(10.0),
+                        padding: const EdgeInsets.all(20.0),
                         child: Column(
                           crossAxisAlignment:CrossAxisAlignment.start,
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             CustomText(text: "Select funding method", size:16.sp, weight:FontWeight.bold),
+                            const SizedBox(height:20),
                             Container(
+                              width: double.infinity,
+                              padding:const EdgeInsets.all(9),
                               decoration: BoxDecoration(
                                 border: Border.all(width: 1),
-                                borderRadius:const BorderRadius.all(Radius.circular(16))
+                                borderRadius:const BorderRadius.all(Radius.circular(8))
+                              ),
+                              child:Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                CustomText(text: "Cashpin",size:11.sp),
+                               const SizedBox(height:7),
+                                CustomText(text: "Redeem a cash pin to add money to wallet",size:11.sp)
+                              ],)
+                            ),
+                           const SizedBox(height: 10,),
+                            Container(
+                              width: double.infinity,
+                              padding:const EdgeInsets.all(9),
+                              decoration: BoxDecoration(
+                                border: Border.all(width: 1),
+                                borderRadius:const BorderRadius.all(Radius.circular(8))
                               ),
                               child:Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
