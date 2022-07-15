@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
             _buildAppBar(greetings()),
             _walletBalance(),
             const SizedBox(height:25),
-            _buildAction(),
+            _buildAction(context),
             const SizedBox(height: 25,),
           Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -89,7 +89,7 @@ class Home extends StatelessWidget {
          ));
   }
 
-  Padding _buildAction() {
+  Padding _buildAction(BuildContext context) {
     return Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15),
           child: GridView.count(
@@ -99,20 +99,52 @@ class Home extends StatelessWidget {
             crossAxisCount: 3,
             crossAxisSpacing: 0.0,
             children: [
-           Container(
-            decoration:const BoxDecoration(
-              color: Color.fromARGB(26, 135, 239, 135),
-              borderRadius: BorderRadius.all(Radius.circular(8))
-            ),
-            padding:const EdgeInsets.all(0),
-            margin:const EdgeInsets.all(8.0),              
-            child:Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children:  [
-              const Icon(Icons.wallet_giftcard,color:Color(0xff90ee90)),
-              const SizedBox(height: 7,),
-              CustomText(text: "Fund Wallet",color: Color(0xff90ee90),weight: FontWeight.bold,size:11.sp)
-             ],)),
+           InkWell(
+            onTap: (){
+               showModalBottomSheet(
+                      isScrollControlled:
+                          false,
+                      backgroundColor:
+                          Colors.transparent,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.vertical(
+                          top: Radius.circular(20),
+                        ),
+                      ),
+                      context: context,
+                      enableDrag: true,
+                      builder: (context) => Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            CustomText(text: "Select funding method", size:16.sp, weight:FontWeight.bold),
+                            Container(
+                              decoration: BoxDecoration(
+                                border: Border.all(width: 1),
+                                borderRadius:const BorderRadius.all(Radius.circular(16))
+                              ),
+                            )
+                            
+
+                        ],),
+                      ));
+            },
+             child: Container(
+              decoration:const BoxDecoration(
+                color: Color.fromARGB(26, 135, 239, 135),
+                borderRadius: BorderRadius.all(Radius.circular(8))
+              ),
+              padding:const EdgeInsets.all(0),
+              margin:const EdgeInsets.all(8.0),              
+              child:Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children:  [
+                const Icon(Icons.wallet_giftcard,color:Color(0xff90ee90)),
+                const SizedBox(height: 7,),
+                CustomText(text: "Fund Wallet",color: Color(0xff90ee90),weight: FontWeight.bold,size:11.sp)
+               ],)),
+           ),
              Container(
             padding:const EdgeInsets.all(0),
             margin:const EdgeInsets.all(8.0),
