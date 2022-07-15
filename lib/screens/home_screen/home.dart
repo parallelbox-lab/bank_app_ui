@@ -236,18 +236,16 @@ class Home extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical:20.0,horizontal: 15),
           child: Row(
             children: [
-              Image.asset("assets/CircleProfile.png",width:30),
+              Image.asset("assets/CircleProfile.png",width:35),
               const SizedBox(width:10),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children:  [
-                    CustomText(text:'Hi, Precious,',size:13.sp),
+                  CustomText(text:'Hi, Precious,',size:13.sp),
                   CustomText(text:greetings,size:13.sp)
                 ],
               ),
               const Spacer(),
-              Image.asset('assets/search.png',width:30),
-              const SizedBox(width:10),
               Image.asset('assets/comment.png',width:30),
             ],
           ),
