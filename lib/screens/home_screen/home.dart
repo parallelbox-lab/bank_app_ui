@@ -167,7 +167,7 @@ class Home extends StatelessWidget {
               children: [
               const Icon(Icons.wallet_giftcard,),
               const SizedBox(height: 7,),
-              CustomText(text: "Pay Bills",color:Color(0xff6A0DAD),weight: FontWeight.bold,)
+              CustomText(text: "Pay Bills",size:11.sp,color:Color(0xff6A0DAD),weight: FontWeight.bold,)
              ],)),
            Container(
             decoration:const BoxDecoration(
