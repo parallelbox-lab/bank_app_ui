@@ -202,14 +202,14 @@ class Home extends StatelessWidget {
               Row(children: [
                 Image.asset("assets/nigeria_logo.jpg",width:25),
                 const SizedBox(width:5),
-                const CustomText(text: "Wallet Balance",color: Colors.white,),
+               CustomText(text: "Wallet Balance",color: Colors.white,size:12.sp),
                const Spacer(),
                 TextButton(onPressed:(){},
                 child:Row(
                   children:  [
                 const  Icon(Icons.refresh),
                 const  SizedBox(width:5),
-                  CustomText(text: 'Refresh Balance',color: Colors.white,size:14.sp),
+                  CustomText(text: 'Refresh Balance',color: Colors.white,size:12.sp),
                   ],
                 ),
                 style: TextButton.styleFrom(
