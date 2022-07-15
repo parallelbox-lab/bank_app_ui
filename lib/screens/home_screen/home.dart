@@ -83,8 +83,8 @@ class Home extends StatelessWidget {
           ],),
           trailing: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
-            CustomText(text:'N57,000',color:Colors.purple), SizedBox(height:10,),CustomText(text:'in progress',color:Colors.orangeAccent)
+            children:  [
+            CustomText(text:'N57,000',color:Colors.purple,size:11.sp),const SizedBox(height:10,), const CustomText(text:'in progress',color:Colors.orangeAccent)
           ],),
          ));
   }
@@ -167,7 +167,7 @@ class Home extends StatelessWidget {
               children: [
               const Icon(Icons.wallet_giftcard,),
               const SizedBox(height: 7,),
-              CustomText(text: "Pay Bills",size:11.sp,color:Color(0xff6A0DAD),weight: FontWeight.bold,)
+              CustomText(text: "Pay Bills",size:11.sp,color:const Color(0xff6A0DAD),weight: FontWeight.bold,)
              ],)),
            Container(
             decoration:const BoxDecoration(
@@ -181,7 +181,7 @@ class Home extends StatelessWidget {
               children: [
               const Icon(Icons.wallet_giftcard),
               const SizedBox(height: 7,),
-              CustomText(text: "View All",size:11.sp,color:Color(0xff7D0552),weight: FontWeight.bold,)
+              CustomText(text: "View All",size:11.sp,color:const Color(0xff7D0552),weight: FontWeight.bold,)
              ],))
             ],
           ),
