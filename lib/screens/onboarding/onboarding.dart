@@ -22,8 +22,8 @@ class Onboarding extends StatelessWidget {
             child: Image.asset("assets/let-swap.jpg"),
            ),
          ),
-         CustomText(text: "Easy way to manage\nyour money",size:27.sp,weight:FontWeight.bold)
-              
+         CustomText(text: "Easy way\nto manage your money",size:33.sp,weight:FontWeight.bold)
+          
             ],
           ),
         ),
