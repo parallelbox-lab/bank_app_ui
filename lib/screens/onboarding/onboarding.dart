@@ -23,7 +23,8 @@ class Onboarding extends StatelessWidget {
            ),
          ),
          CustomText(text: "Easy way\nto manage your money",size:33.sp,weight:FontWeight.bold),
-        Container(child:  CustomText(text: "connect your money to your friemds and brands",size:15.sp,color:Colors.grey,weight:FontWeight.w700),)
+         const SizedBox(height:10),
+         CustomText(text: "Connect your money to your friemds and brands",size:15.sp,color:Colors.grey,weight:FontWeight.w700),
             ],
           ),
         ),
