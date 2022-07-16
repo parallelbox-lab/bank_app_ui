@@ -26,7 +26,7 @@ class Onboarding extends StatelessWidget {
            children: [
              CustomText(text: "Easy way\nto manage your money",size:33.sp,weight:FontWeight.bold),
              const SizedBox(height:10),
-             CustomText(text: "Connect your money to your friemds and brands",size:15.sp,color:Colors.grey,weight:FontWeight.w700),
+             CustomText(text: "Connect your money to your friends and family",size:15.sp,color:Colors.grey,weight:FontWeight.w700),
            ],
          )),
          const SizedBox(height:10),
