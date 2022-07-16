@@ -32,7 +32,7 @@ class Onboarding extends StatelessWidget {
          const SizedBox(height:10),
          Container(
           width: double.infinity,
-          alignment: Alignment.bottomLeft,
+          alignment: Alignment.bottomCenter,
           child: TextButton(
             onPressed: (){},
             child: Text("Get Started"),
