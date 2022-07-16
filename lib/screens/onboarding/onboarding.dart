@@ -16,7 +16,7 @@ class Onboarding extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
           const  SizedBox(height: 20,),
-            Image.asset("assets/logo.png",width:180),
+            Image.asset("assets/logo.png",width:150),
          Expanded(
            child: Center(
             child: Image.asset("assets/let-swap.jpg"),
@@ -42,7 +42,7 @@ class Onboarding extends StatelessWidget {
               backgroundColor: Colors.deepPurple,
             ),
             onPressed: (){},
-            child: Text("Get Started"),
+            child: CustomText(text:"Get Started",size:13.sp),
           ),
          )
             ],
