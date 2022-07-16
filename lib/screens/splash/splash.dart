@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:bank_app_ui/screens/onboarding/onboarding.dart';
 import 'package:flutter/material.dart';
 import 'package:bank_app_ui/screens/main_screen.dart';
 
@@ -12,7 +13,7 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
   _navigationPage() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (ctx) => const MainScreen()));
+        context, MaterialPageRoute(builder: (ctx) => const Onboarding()));
   }
 
   @override
