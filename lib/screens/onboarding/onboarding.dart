@@ -1,3 +1,4 @@
+import 'package:bank_app_ui/screens/main_screen.dart';
 import 'package:bank_app_ui/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
@@ -41,7 +42,7 @@ class Onboarding extends StatelessWidget {
               primary: Colors.white,
               backgroundColor: Colors.deepPurple,
             ),
-            onPressed: (){},
+            onPressed: ()=>Navigator.pushReplacement(context, MaterialPageRoute(builder: (ctx)=> const MainScreen())),
             child: CustomText(text:"Get Started",size:13.sp),
           ),
          )
