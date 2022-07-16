@@ -715,8 +715,8 @@ class Home extends StatelessWidget {
                       onPressed: () => state(() {
                             isBalanceVisible = !isBalanceVisible;
                           }),
-                      icon:
-                      const Icon(Icons.remove_red_eye, color: Colors.white))
+                      icon:isBalanceVisible == true ?
+                      const Icon(Icons.remove_red_eye, color: Colors.white):const Icon(Icons.remove_red_eye_sharp,color: Colors.white))
                 ],
               )
             ],
