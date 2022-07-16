@@ -13,7 +13,7 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
   _navigationPage() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (ctx) => const Onboarding()));
+       context, MaterialPageRoute(builder: (ctx) => const Onboarding()));
   }
 
   @override

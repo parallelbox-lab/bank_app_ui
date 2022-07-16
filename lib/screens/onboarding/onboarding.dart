@@ -6,12 +6,14 @@ class Onboarding extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body:Padding(
         padding: const EdgeInsets.all(11.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-          Image.asset("assets/logo.png",width:80),
+        const  SizedBox(height: 30,),
+          Image.asset("assets/logo.png",width:180),
        Expanded(
          child: Center(
           child: Image.asset("assets/let-swap.jpg"),
