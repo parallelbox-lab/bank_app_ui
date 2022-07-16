@@ -1,4 +1,4 @@
-import 'package:bank_app_ui/screens/main_screen.dart';
+import 'package:bank_app_ui/screens/splash/splash.dart';
 import 'package:bank_app_ui/utils/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
@@ -15,11 +15,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(builder: (context, orientation, deviceType) {
       return MaterialApp(
-        title: 'Flutter Demo',
+        title: 'Payme App',
         debugShowCheckedModeBanner: false,
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
-        home: const MainScreen(),
+        home: const Splash(),
       );
     });
   }

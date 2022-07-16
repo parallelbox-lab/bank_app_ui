@@ -1,6 +1,7 @@
 import 'package:bank_app_ui/screens/cash_pins/cash_pins.dart';
 import 'package:bank_app_ui/screens/home_screen/home.dart';
 import 'package:flutter/material.dart';
+import 'package:sizer/sizer.dart';
 
 
 class MainScreen extends StatefulWidget {
@@ -47,14 +48,14 @@ class _MainScreenState extends State<MainScreen> {
             unselectedItemColor: Colors.grey,
             showUnselectedLabels: true,
             elevation: 3,
-            selectedLabelStyle:const TextStyle(
+            selectedLabelStyle: TextStyle(
                 fontFamily: 'Core Pro',
-                fontSize: 11.0,
+                fontSize: 11.0.sp,
                 fontWeight: FontWeight.w600,
                 fontStyle: FontStyle.normal),
-            unselectedLabelStyle:const TextStyle(
+            unselectedLabelStyle: TextStyle(
                 fontFamily: 'Core Pro',
-                fontSize: 11.0,
+                fontSize: 11.0.sp,
                 fontWeight: FontWeight.w600,
                 fontStyle: FontStyle.normal),
             onTap: _itemTapped,
