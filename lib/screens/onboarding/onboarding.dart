@@ -52,11 +52,14 @@ class Onboarding extends StatelessWidget {
                       primary: Colors.white,
                       backgroundColor: Colors.deepPurple,
                     ),
-                    onPressed: () {
+                    onPressed: ()async {
+                      Future.delayed(const Duration(seconds: 3),(){
                       Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
                               builder: (ctx) => const MainScreen()));
+                      });
+                      
                     },
                     child: CustomText(text: "Get Started", size: 13.sp),
                   ),
