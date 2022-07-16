@@ -31,8 +31,9 @@ class Onboarding extends StatelessWidget {
          )),
          const SizedBox(height:10),
          Container(
-          padding:const EdgeInsets.symmetric(vertical:15),
+        margin: const EdgeInsets.only(bottom: 5.0),
           width: double.infinity,
+          height: 55,
           child: TextButton(
                style: TextButton.styleFrom(
               shape: RoundedRectangleBorder(
