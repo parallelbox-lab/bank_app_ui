@@ -31,9 +31,15 @@ class Onboarding extends StatelessWidget {
          )),
          const SizedBox(height:10),
          Container(
+          padding:const EdgeInsets.symmetric(vertical:15),
           width: double.infinity,
-          alignment: Alignment.bottomCenter,
           child: TextButton(
+               style: TextButton.styleFrom(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0)),
+              primary: Colors.white,
+              backgroundColor: Colors.deepPurple,
+            ),
             onPressed: (){},
             child: Text("Get Started"),
           ),
