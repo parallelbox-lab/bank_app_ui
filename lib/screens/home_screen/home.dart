@@ -207,7 +207,8 @@ class Home extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Icon(Icons.wallet_giftcard, color: Color(0xff90ee90)),
+                    Image.asset("assets/wallet.png",width:25),
+                    // const Icon(Icons.wallet_giftcard, color: Color(0xff90ee90)),
                     const SizedBox(
                       height: 7,
                     ),
