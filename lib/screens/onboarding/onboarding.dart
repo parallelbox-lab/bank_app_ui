@@ -6,10 +6,20 @@ class Onboarding extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body:Column(
-        children: [
-          
-        ],
+      body:Padding(
+        padding: const EdgeInsets.all(11.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+          Image.asset("assets/logo.png",width:80),
+       Expanded(
+         child: Center(
+          child: Image.asset("assets/let-swap.jpg"),
+         ),
+       )
+            
+          ],
+        ),
       )
     );
   }
