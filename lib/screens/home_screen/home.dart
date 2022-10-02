@@ -34,26 +34,25 @@ class Home extends StatelessWidget {
               height: 25,
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15),
+              padding: const EdgeInsets.symmetric(horizontal: 19),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text('Transactions',
-                      style: TextStyle(fontWeight: FontWeight.w700)),
+                  CustomText(text: "Transactions",size: 13.sp,),
                   GestureDetector(
                     onTap: () {},
                     child: Row(
-                      children: const [
-                        Text('View all',
-                            style: TextStyle(fontWeight: FontWeight.w700)),
-                        SizedBox(width: 5),
-                        Icon(Icons.arrow_forward)
+                    children: [
+                  CustomText(text: "View All",size: 13.sp,),
+                       const SizedBox(width: 5),
+                       const Icon(Icons.arrow_forward)
                       ],
                     ),
                   ),
                 ],
               ),
             ),
+            const SizedBox(height: 15,),
             _buildTransactionList(),
           ],
         ),

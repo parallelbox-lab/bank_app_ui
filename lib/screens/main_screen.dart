@@ -41,7 +41,7 @@ class _MainScreenState extends State<MainScreen> {
         physics: const NeverScrollableScrollPhysics(),
       ),
       bottomNavigationBar: SizedBox(
-        height: 70,
+        // height: 70,
         child: BottomNavigationBar(
             currentIndex: _selectedIndex,
             // selectedItemColor: Colors.black,
